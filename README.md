@@ -2,6 +2,12 @@
 
 An intelligent research system powered by Mistral AI that automates web research, content analysis, and report generation using a multi-agent architecture.
 
+## 🚀 Live Demo
+
+**Try it now**: https://multiagentresech-djmxcyuekqc5fdappufi3ag.streamlit.app/
+
+The app is live and ready to use! Just enter a research topic to get started.
+
 ## Features
 
 ✨ **Web Search Agent** - Find recent, reliable, detailed information on any topic using Tavily API  
@@ -96,7 +102,7 @@ MISTRAL_API_KEY = "your_mistral_api_key"
 **⚠️ IMPORTANT**: Never commit `.env` or `secrets.toml` with real API keys to GitHub. Streamlit Cloud handles secrets securely through the dashboard.
 
 4. **Access Your App**
-   - Your app will be live at: `https://YOUR_USERNAME-multiagent-resech.streamlit.app`
+   - Your app is now live at: https://multiagentresech-djmxcyuekqc5fdappufi3ag.streamlit.app/
 
 ### Auto-Deploy
 Each time you push to the `main` branch, Streamlit Cloud automatically redeploys your app.
