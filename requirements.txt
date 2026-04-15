@@ -1,0 +1,66 @@
+# Core LangChain ecosystem
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-mistralai
+
+# LCEL / Runnables support (comes with core but keeping explicit)
+langchainhub
+
+# OpenAI
+openai
+
+# Mistral
+mistralai
+
+# Tavily Search Tool
+tavily-python
+
+# Web scraping
+beautifulsoup4
+requests
+lxml
+
+# Async support (important for agents/tools)
+aiohttp
+httpx
+
+# Environment variables
+python-dotenv
+
+# Data handling / parsing
+pydantic
+typing-extensions
+
+# Logging / debugging
+rich
+
+# Optional but useful for development
+ipython
+jupyter
+
+# Token counting (helps optimize OpenAI usage)
+tiktoken
+
+# Retry / robustness
+tenacity
+
+# JSON handling improvements
+orjson
+
+# Optional: if you plan to expand to vector search later
+faiss-cpu
+chromadb
+
+# Optional: embeddings & transformers (future-proofing)
+sentence-transformers
+transformers
+
+# Optional: FastAPI if you expose as API
+fastapi
+uvicorn
+streamlit
+
+# Optional: for structured outputs / schemas
+jsonschema
