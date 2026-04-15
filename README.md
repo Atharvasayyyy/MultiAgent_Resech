@@ -54,6 +54,7 @@ MISTRAL_API_KEY=your_mistral_api_key
 ```
 
 Get your API keys:
+
 - **Tavily**: https://tavily.com
 - **Mistral**: https://console.mistral.ai
 
@@ -72,6 +73,7 @@ The app will open at `http://localhost:8501`
 ## Deploying to Streamlit Cloud
 
 ### Prerequisites
+
 - GitHub account (you have this ✓)
 - Repository pushed to GitHub (done ✓)
 - Streamlit account at https://streamlit.io
@@ -105,6 +107,7 @@ MISTRAL_API_KEY = "your_mistral_api_key"
    - Your app is now live at: https://multiagentresech-djmxcyuekqc5fdappufi3ag.streamlit.app/
 
 ### Auto-Deploy
+
 Each time you push to the `main` branch, Streamlit Cloud automatically redeploys your app.
 
 ## Project Structure
@@ -132,14 +135,15 @@ MultiAgent_Resech/
 
 ## Environment Variables
 
-| Variable | Description |
-|----------|-------------|
-| `TAVILY_API_KEY` | API key for web search |
+| Variable          | Description            |
+| ----------------- | ---------------------- |
+| `TAVILY_API_KEY`  | API key for web search |
 | `MISTRAL_API_KEY` | API key for Mistral AI |
 
 ## Rate Limiting
 
 If you encounter Mistral API rate limits:
+
 - The system automatically retries with exponential backoff
 - Wait times: 15s → 30s → 60s → 120s → 240s
 - Maximum 5 retry attempts
@@ -149,18 +153,21 @@ For production use, consider upgrading your Mistral plan.
 ## Troubleshooting
 
 ### "streamlit: command not found"
+
 ```bash
 # Use the full path or Python module
 .\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
 ### "ModuleNotFoundError: No module named 'langchain_mistralai'"
+
 ```bash
 # Reinstall dependencies
 uv pip install -r requirements.txt
 ```
 
 ### Rate limit errors
+
 - Mistral free tier has strict limits (~1-2 req/min)
 - Wait time before retrying, or upgrade your plan
 - See https://console.mistral.ai/billing for account options
@@ -180,6 +187,7 @@ MIT License - feel free to use this project!
 ## Support
 
 For issues or questions:
+
 - Check Streamlit docs: https://docs.streamlit.io
 - Mistral docs: https://docs.mistral.ai
 - LangChain docs: https://python.langchain.com
